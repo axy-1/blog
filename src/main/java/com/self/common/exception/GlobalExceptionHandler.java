@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
+ * 全局捕获异常
  * @author axy
  * @create 2021-07-02-17:20
  */
@@ -41,6 +42,12 @@ public class GlobalExceptionHandler {
         BindingResult bindingResult = e.getBindingResult();
         ObjectError objectError = bindingResult.getAllErrors().stream().findFirst().get();
         return Result.fail(objectError.getDefaultMessage());
+    }
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    @ExceptionHandler(value = IllegalArgumentException.class)
+    public Result handler(IllegalArgumentException e) {
+        log.error("Assert异常：------------",e);
+        return Result.fail(e.getMessage());
     }
 
 }

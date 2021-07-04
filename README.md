@@ -2,10 +2,10 @@
 
 #### 介绍
 个人博客blog
-
+整合Shiro做登录安全验证
 
 #### 软件架构
-Shiro,SpringBoot
+`Shiro,SpringBoot`
 
 
 

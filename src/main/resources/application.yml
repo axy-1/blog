@@ -27,4 +27,4 @@ server:
 jwt:
   header: Authorization
   expire: 604800
-  secret: c15be9a15a0a238084e0c5a846f3a7b4
+  secret: 202cb962ac59075b964b07152d234b70

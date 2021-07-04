@@ -13,8 +13,8 @@ class BlogApplicationTests {
     void contextLoads() {
         Md5Hash md5Hash = new Md5Hash("123");
         System.out.println(md5Hash.toHex());
-        Md5Hash md5Hash1 = new Md5Hash("123","x0*7ps");
-        System.out.println(md5Hash1.toHex());
+//        Md5Hash md5Hash1 = new Md5Hash("123","x0*7ps");
+//        System.out.println(md5Hash1.toHex());
 
     }
 

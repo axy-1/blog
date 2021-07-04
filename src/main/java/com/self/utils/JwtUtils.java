@@ -11,6 +11,7 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 /**
+ * JWT工具类
  * @author axy
  * @create 2021-07-01-14:14
  */
