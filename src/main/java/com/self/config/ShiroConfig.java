@@ -23,6 +23,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
+ * Shiro配置文件
  * @author axy
  * @create 2021-07-02-16:21
  */

@@ -3,7 +3,6 @@ package com.self.controller;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.crypto.SecureUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.extension.conditions.query.QueryChainWrapper;
 import com.self.common.dto.LoginDto;
 import com.self.common.lang.Result;
 import com.self.domain.User;
@@ -22,9 +21,10 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * 登录验证接口
  * @author axy
  * @create 2021-07-04-14:59
+ * 登录验证接口
+ * 根据token获取用户信息
  */
 @RestController
 public class AccountController {
